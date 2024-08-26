@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MovieDetails from '../components/MovieDetails.js';
 //import movieService from '../services/movieService';
-import {getMovieById} from '../services/movieService.js';
+import { getMovieById } from '../services/movieService.js';
 
 const MoviePage = ({ match }) => {
   const [movie, setMovie] = useState(null);
@@ -15,9 +15,9 @@ const MoviePage = ({ match }) => {
   }, [match.params.id]);
 
   return (
-    <div className="movie-page">
+    <section className="movie-page">
       {movie && <MovieDetails movie={movie} />}
-    </div>
+    </section>
   );
 };
 

@@ -1,14 +1,17 @@
 import React from 'react';
+import { FaHeart } from 'react-icons/fa6';
+import '../styles/MovieCard.css';
 
 const MovieCard = ({ movie }) => {
   return (
-    <div className="movie-card">
-      <img src={movie.poster} alt={movie.title} />
-      <h2>{movie.title}</h2>
-      <p>{movie.year}</p>
+    <div className="movieCard">
+      <h4>{movie.title}</h4>
+      <div className="fav">
+        <p>Add to Favorites </p>
+        <FaHeart />
+      </div>
     </div>
   );
 };
 
 export default MovieCard;
-

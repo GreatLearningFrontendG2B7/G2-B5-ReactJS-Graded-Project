@@ -1,0 +1,26 @@
+.movieCard {
+    margin: 0;
+    padding: 1.5rem;
+    border: 1px solid #f3ecec;
+    border-top: 0;
+}
+
+.movieCard h4 {
+    font-weight: 400;
+}
+
+.movieCard .fav {
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.movieCard .fav p {
+    color: rgb(201, 197, 197);
+}
+
+.movieCard .fav svg {
+    color: #ff0000;
+}

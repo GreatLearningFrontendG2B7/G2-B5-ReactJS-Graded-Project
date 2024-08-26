@@ -1,0 +1,21 @@
+.homePage {
+    display: flex;
+    flex-direction: column;
+}
+
+.homePage ul {
+    margin-top: 2rem;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.homePage ul li {
+    padding: 1rem;
+}
+
+.homePage ul li img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}

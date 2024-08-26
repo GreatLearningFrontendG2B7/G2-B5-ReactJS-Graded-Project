@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Favorites from '../components/Favorites.js';
 //import movieService from '../services/movieService.js';
-import {getFavorites} from '../services/movieService.js';
+import { getFavorites } from '../services/movieService.js';
 
 const FavoritesPage = () => {
   const [favorites, setFavorites] = useState([]);
@@ -15,11 +15,10 @@ const FavoritesPage = () => {
   }, []);
 
   return (
-    <div className="favorites-page">
+    <section className="favorites-page">
       <Favorites favorites={favorites} />
-    </div>
+    </section>
   );
 };
 
 export default FavoritesPage;
-
