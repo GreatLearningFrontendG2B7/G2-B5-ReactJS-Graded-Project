@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import MovieCard from '../components/MovieCard.js';
-import { getAllMovies, searchMovies } from '../services/movieService.js';
+import { getAllMovies } from '../services/movieService.js';
 import '../styles/HomePage.css';
 function HomePage() {
   const [movies, setMovies] = useState([]);
@@ -8,7 +8,7 @@ function HomePage() {
   useEffect(() => {
     const fetchMovies = async () => {
       const data = await getAllMovies();
-      setMovies(data);
+      setMovies(data.data);
     };
     fetchMovies();
   }, []);

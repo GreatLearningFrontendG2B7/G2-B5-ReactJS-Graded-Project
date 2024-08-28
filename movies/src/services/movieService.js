@@ -1,7 +1,8 @@
 import movieData from '../data/data';
+import axios from 'axios';
 
 const getAllMovies = async () => {
-  const my_movies = movieData['movies-coming'];
+  const my_movies = await axios.get('/movies-coming');
   return my_movies;
 };
 
