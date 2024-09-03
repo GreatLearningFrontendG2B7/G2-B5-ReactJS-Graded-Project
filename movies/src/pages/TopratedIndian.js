@@ -1,20 +1,19 @@
-import React, { useState, useEffect } from "react";
-import MovieCard from "../components/MovieCard.js";
-import { getAllMovies } from "../services/movieService.js";
+import React, { useEffect, useState } from "react";
 import "../styles/HomePage.css";
+import { getTopratedIndian } from "../services/movieService";
+import MovieCard from "../components/MovieCard";
 import { NavLink } from "react-router-dom";
 
-function HomePage() {
+const TopratedIndian = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     const fetchMovies = async () => {
-      const data = await getAllMovies();
+      const data = await getTopratedIndian();
       setMovies(data.data);
     };
     fetchMovies();
   }, []);
-
   return (
     <section className="homePage">
       <h3>Movies</h3>
@@ -34,6 +33,6 @@ function HomePage() {
       </ul>
     </section>
   );
-}
+};
 
-export default HomePage;
+export default TopratedIndian;

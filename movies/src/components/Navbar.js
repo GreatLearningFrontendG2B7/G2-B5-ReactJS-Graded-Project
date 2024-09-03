@@ -1,7 +1,7 @@
-import React from 'react';
-import '../styles/Navbar.css';
-import { NavLink } from 'react-router-dom';
-import { FaSearch } from 'react-icons/fa';
+import React from "react";
+import "../styles/Navbar.css";
+import { NavLink } from "react-router-dom";
+import { FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -13,16 +13,16 @@ const Navbar = () => {
               <NavLink to="/">Movies in theatres</NavLink>
             </li>
             <li>
-              <NavLink to="/">Coming soon</NavLink>
+              <NavLink to="/coming-soon">Coming soon</NavLink>
             </li>
             <li>
-              <NavLink to="/">Top rated Indian</NavLink>
+              <NavLink to="/top-rated-indian">Top rated Indian</NavLink>
             </li>
             <li>
-              <NavLink to="/">Top rated movies</NavLink>
+              <NavLink to="/top-rated-movies">Top rated movies</NavLink>
             </li>
             <li>
-              <NavLink to="/">Favorites</NavLink>
+              <NavLink to="/favorites">Favorites</NavLink>
             </li>
           </ul>
           <form className="search-form">

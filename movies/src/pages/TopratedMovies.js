@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
-import MovieCard from "../components/MovieCard.js";
-import { getAllMovies } from "../services/movieService.js";
+import React, { useEffect, useState } from "react";
 import "../styles/HomePage.css";
+import MovieCard from "../components/MovieCard";
+import { getTopratedMovies } from "../services/movieService";
 import { NavLink } from "react-router-dom";
 
-function HomePage() {
+const TopratedMovies = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     const fetchMovies = async () => {
-      const data = await getAllMovies();
+      const data = await getTopratedMovies();
       setMovies(data.data);
     };
     fetchMovies();
@@ -34,6 +34,6 @@ function HomePage() {
       </ul>
     </section>
   );
-}
+};
 
-export default HomePage;
+export default TopratedMovies;
