@@ -1,19 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext } from "react";
 import MovieCard from "../components/MovieCard.js";
-import { getAllMovies } from "../services/movieService.js";
 import "../styles/HomePage.css";
 import { NavLink } from "react-router-dom";
+import { ThemeContext } from "../App.js";
 
 function HomePage() {
-  const [movies, setMovies] = useState([]);
-
-  useEffect(() => {
-    const fetchMovies = async () => {
-      const data = await getAllMovies();
-      setMovies(data.data);
-    };
-    fetchMovies();
-  }, []);
+  const movieD = useContext(ThemeContext);
+  const movies = movieD["movies-in-theaters"];
 
   return (
     <section className="homePage">

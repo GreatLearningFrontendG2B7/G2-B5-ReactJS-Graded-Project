@@ -1,19 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import "../styles/HomePage.css";
 import MovieCard from "../components/MovieCard";
-import { getTopratedMovies } from "../services/movieService";
 import { NavLink } from "react-router-dom";
+import { ThemeContext } from "../App";
 
 const TopratedMovies = () => {
-  const [movies, setMovies] = useState([]);
-
-  useEffect(() => {
-    const fetchMovies = async () => {
-      const data = await getTopratedMovies();
-      setMovies(data.data);
-    };
-    fetchMovies();
-  }, []);
+  const movieD = useContext(ThemeContext);
+  const movies = movieD["top-rated-movies"];
 
   return (
     <section className="homePage">
