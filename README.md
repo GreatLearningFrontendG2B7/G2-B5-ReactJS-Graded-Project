@@ -1,6 +1,6 @@
-## G2-B5-ReactJS-Graded-Project
+## G2B5-ReactJS_GradedProject4
 
-#G2-B5-ReactJS-Graded-Project
+#G2B5-ReactJS_GradedProject4
 
 ## Please perform the following after cloning the Project
 
