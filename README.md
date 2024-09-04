@@ -1,7 +1,5 @@
 To start project please do the following steps after cloning
 
-1. cd movies
+1. npm install
 
-2. npm install
-
-3. npm start
+2. npm start
