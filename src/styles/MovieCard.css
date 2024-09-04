@@ -1,7 +1,7 @@
 .movieCard {
   margin: 0;
-  padding: 1.5rem;
-  border: 1px solid #f3ecec;
+  padding: 1.5vw;
+  border: 0.1vw solid #f3ecec;
   border-top: 0;
 }
 
@@ -10,11 +10,11 @@
 }
 
 .movieCard .fav {
-  margin-top: 0.8rem;
+  margin-top: 0.8vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 0.5vw;
 }
 
 .movieCard .fav p {
@@ -27,7 +27,15 @@
 
 .movieCard .fav button {
   display: flex;
-  gap: 0.2rem;
+  gap: 0.2vw;
   border: none;
   background: none;
+}
+@media all and (max-width: 450px) {
+  .movieCard {
+    padding: 0.8vw;
+  }
+  .movieCard .fav button {
+    font-size: 0.8vw;
+  }
 }
