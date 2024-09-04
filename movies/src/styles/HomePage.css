@@ -37,3 +37,8 @@
   width: 100%;
   color: #ff0000;
 }
+
+.homePage .filteredMovie {
+  display: flex;
+  justify-content: space-between;
+}

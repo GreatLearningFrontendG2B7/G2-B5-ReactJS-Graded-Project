@@ -1,5 +1,5 @@
 .movieDetails {
-  margin-top: 1rem;
+  position: fixed;
 }
 
 .movieDetails a {

@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import "../styles/HomePage.css";
 import MovieCard from "../components/MovieCard";
 import { NavLink } from "react-router-dom";
-import { ThemeContext } from "../App";
+import { MovieContext } from "../App";
 
 const TopratedMovies = () => {
-  const movieD = useContext(ThemeContext);
+  const movieD = useContext(MovieContext);
   const movies = movieD["top-rated-movies"];
 
   return (

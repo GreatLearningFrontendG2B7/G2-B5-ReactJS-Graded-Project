@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import MovieCard from "../components/MovieCard";
 import "../styles/HomePage.css";
 import { NavLink } from "react-router-dom";
-import { ThemeContext } from "../App";
+import { MovieContext } from "../App";
 
 const ComingSoon = () => {
-  const movieD = useContext(ThemeContext);
+  const movieD = useContext(MovieContext);
   const movies = movieD["movies-coming"];
 
   return (

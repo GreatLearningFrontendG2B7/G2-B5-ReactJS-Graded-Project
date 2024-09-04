@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import MovieCard from "../components/MovieCard.js";
 import "../styles/HomePage.css";
 import { NavLink } from "react-router-dom";
-import { ThemeContext } from "../App.js";
+import { MovieContext } from "../App.js";
 
 function HomePage() {
-  const movieD = useContext(ThemeContext);
+  const movieD = useContext(MovieContext);
   const movies = movieD["movies-in-theaters"];
 
   return (

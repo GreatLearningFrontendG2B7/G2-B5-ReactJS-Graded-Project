@@ -11,12 +11,12 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import movieData from "./data/data";
 
-export const ThemeContext = React.createContext();
+export const MovieContext = React.createContext();
 
 const App = () => {
   return (
     <>
-      <ThemeContext.Provider value={movieData}>
+      <MovieContext.Provider value={movieData}>
         <Navbar />
         <ToastContainer />
         <Routes>
@@ -28,7 +28,7 @@ const App = () => {
           <Route path="/coming-soon" element={<ComingSoon />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
-      </ThemeContext.Provider>
+      </MovieContext.Provider>
     </>
   );
 };
